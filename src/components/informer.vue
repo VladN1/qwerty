@@ -1,11 +1,17 @@
 <template>
   <div class="informer-container">
-
-</div>
+    <temp/>
+    <hum/>
+  </div>
 </template>
 <script>
+import temp from './temp.vue'
+import hum from './hum.vue'
 export default{
   name: 'informer',
+  components: {
+    temp, hum
+  }
 }
 </script>
 <style>
