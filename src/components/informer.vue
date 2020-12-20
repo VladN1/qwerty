@@ -6,9 +6,6 @@
 <script>
 export default{
   name: 'informer',
-  data(){
-    return {text: 'Я новый компонент!'}
-  }
 }
 </script>
 <style>
@@ -20,7 +17,7 @@ export default{
   width: 400px;
   min-height: 255px;
   padding: 30px;
-  background-image: url('img/forest.png');
+  background-image: url('/img/forest.png');
   background-size: cover;
   background-position: center center;
   border-radius: 20px;
