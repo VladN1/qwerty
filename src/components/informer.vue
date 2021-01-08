@@ -1,16 +1,22 @@
 <template>
   <div class="informer-container">
     <temp/>
+    <flex/>
     <hum/>
+    <vert/>
+    <wind/>
   </div>
 </template>
 <script>
-import temp from './temp.vue'
-import hum from './hum.vue'
+import temp from './temp.vue';
+import hum from './hum.vue';
+import wind from './wind.vue';
+import flex from './flex.vue';
+import vert from './vert.vue';
 export default{
   name: 'informer',
   components: {
-    temp, hum
+    temp, hum, wind, flex, vert
   }
 }
 </script>
