@@ -1,12 +1,25 @@
 <template>
-  <informer />
+  <div id="app">
+    <informer v-bind:weather="weather" />
+  </div>
 </template>
 <script>
 import informer from './components/informer.vue'
   export default{
-    name: 'FirstComponent',
+    name: 'App',
     components: {
       informer
+    },
+    data() {
+      return{
+        weather:{
+          temp_real: 0,
+          temp_feel: -3.5,
+          hum: 5,
+          wind: 20
+        }
+        
+      }
     }
   }
 </script>
@@ -15,7 +28,7 @@ import informer from './components/informer.vue'
     margin: 0;
     padding: 0;
   }
-  .app {
+  #app {
     display: flex;
     align-items: center;
     justify-content: center;

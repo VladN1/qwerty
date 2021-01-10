@@ -1,10 +1,10 @@
 <template>
   <div class="informer-container">
-    <temp/>
+    <temp v-bind:real="weather.temp_real" v-bind:feel="weather.temp_feel" />
     <flex/>
-    <hum/>
+    <hum v-bind:val="hum" />
     <vert/>
-    <wind/>
+    <wind v-bind:val="wind" />
   </div>
 </template>
 <script>
@@ -15,6 +15,7 @@ import flex from './flex.vue';
 import vert from './vert.vue';
 export default{
   name: 'informer',
+  props: ['weather'],
   components: {
     temp, hum, wind, flex, vert
   }

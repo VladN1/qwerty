@@ -1,13 +1,14 @@
 <template>
   <div class="temperature">
     <img src="img/thermometer.png">
-    <div class="temp-real">1</div>
-    <div class="temp-feel">-3.8</div>
+    <div class="temp-real">{{real}}</div>
+    <div class="temp-feel">-{{feel}}</div>
   </div>
 </template>
 <script>
 export default {
-  name: "temp"
+  name: "temp",
+  props: ['real', 'feel']
 }
 </script>
 
